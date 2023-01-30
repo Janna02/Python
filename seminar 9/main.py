@@ -21,7 +21,7 @@ import Functions
 
 
 
-app = ApplicationBuilder().token("5877890262:AAH0YieDJmyuG5bh_Qd3umj4hR7oUVNGXDs").build()
+app = ApplicationBuilder().token("TOKEN").build()
 
 app.add_handler(ConversationHandler(entry_points= [CommandHandler("game", Functions.game)], 
                                     states={Functions.my_turn:[MessageHandler(filters.TEXT, Functions.gamer_turn)], 
