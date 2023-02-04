@@ -11,7 +11,7 @@ app = ApplicationBuilder().token("TOKEN").build()
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(f'Привет, {update.effective_user.first_name}!\nВведите выражние для вычисления без пробелов: ')
+    await update.message.reply_text(f'Привет, {update.effective_user.first_name}!\nВведите выражение для вычисления без пробелов: ')
     return A
 
 async def calc(update: Update, context: ContextTypes.DEFAULT_TYPE):
